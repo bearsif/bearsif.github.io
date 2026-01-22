@@ -2,7 +2,10 @@
 layout: post
 title:  "Simple lap time comparison tool"
 ---
-This is the first thing
+This is the first tool I have made. It works by taking the values of 3 sector times for 2 laps, it then compares the values entered and outputs 3 arrays. One is the first lap sector times, one is the second lap sector times and the last one is the delta between the sector times. Then it outputs an overall delta between the lap times.
+
+I made this in order to build a better of understanding of how small mistakes across a lap can accumulate to a dramatic loss of time.
+However, one drawback of this is it assumes that the conditions of the car (tyre deg, fuel load) remain unchanged. Despite this it is still useful to isolate where most of the time is lost
 
 ```python
 lap_a = []
@@ -45,4 +48,4 @@ print("Deltas: ")
 print(deltas)
 print("The delta between lap A and lap B is " + str(total_delta))
 ```
-
+![image](/images/image.jpeg)
